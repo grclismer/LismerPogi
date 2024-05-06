@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>2024 Calendar</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+       }
+       body{
+        margin: 0;
+        padding: 0; 
+        background-image: url(https://storage.googleapis.com/pai-images/ed2ebdf0e51145969c3c3f39d9952670.jpeg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+       h1 {
+        text-align: center;
+        font-size: 50px;
+        font-weight: 600;
+        color: rgb(255, 255, 255);
+       }
+       .container-fluid {
+           text-align: center;
+           flex-direction: column;
+           height: 68vh;
+           width: 126vh;
+           opacity: 78%;
+           margin-bottom: 11%;
+           background-color: black;
+       }
+       .container-fluid tr :hover {
+        transition: 0.5s ease;
+        background-color: rgba(125, 125, 125, 0.65)
+       }
+        .container-fluid h1 {
+            font-size: 40px;
+            font-weight: 900;
+            color: rgba(181, 255, 43, 0.887);
+        }
+        /*.container-fluid tr :nth-of-type(7n+1){ 
+            background-color: rgb(220, 53, 69);
+        }*/
+        .container-fluid td:nth-of-type(7n+1) {
+            color: rgb(207, 1, 1);
+           
+        }
+        .Info-fluid {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+            opacity: 77%; 
+        }
+        .Info-fluid tr{
+            color: aqua;
+        }
+        .Info-fluid :hover{
+            background-color: rgb(16, 16, 16);
+        }
+        .Info-fluid .working {
+            padding-left: 1%;
+            float: left;
+        }
+        .Info-fluid .n-working {
+            float: right;
+            padding: 1%;
+        }
+        .Info-fluid .set1-title {
+            font-size: 50px;
+            font-weight: 400;
+            color: rgb(223, 126, 0);
+        }
+        .Info-fluid .set2-title {
+            padding: 0%;
+            font-size: 50px;
+            font-weight: 400;
+            color: rgb(223, 126, 0);
+  
+        }
+        /*@media screen and (max-width: 800px){
+
+            .Info-fluid {
+            
+            flex-direction: row;
+            
+            }
+            
+            }
+
+        /*@media screen and (min-width: 480px) {
+        
+        body {
+        
+            background-image: url(https://storage.googleapis.com/pai-images/ed2ebdf0e51145969c3c3f39d9952670.jpeg);
+        
+        }
+        
+        }*/
+    </style>
+</head>
+<body>
+    <h1>2024 Calendar</h1>
+    <i class="fa-regular fa-calendar"></i>
+    <div class="container-fluid table-responsive ">
+        <h1>January</h1>
+        <div class="row">
+            <table class="table table-secondary table table-bordered">
+                <thead class="column">
+                    <tr>
+                        <th class="col bg-success" style="color: red ">Sunday</th>
+                        <th class="col bg-success">Monday</th>
+                        <th class="col bg-success">Tuesday</th>
+                        <th class="col bg-success">Wednesday</th>
+                        <th class="col bg-success">Thursday</th>
+                        <th class="col bg-success">Friday</th>
+                        <th class="col bg-success">Saturday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td class="text-danger">1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                    </tr>
+                    <tr>
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>31</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h1>February</h1>
+        <div class="row">
+            <table class="table table-secondary table table-bordered">
+                <thead class="secondary">
+                    <tr>
+                        <th class="colcol bg-success" style="color: red  ">Sunday</th>
+                        <th class="col bg-success">Monday</th>
+                        <th class="col bg-success">Tuesday</th>
+                        <th class="col bg-success">Wednesday</th>
+                        <th class="col bg-success">Thursday</th>
+                        <th class="col bg-success">Friday</th>
+                        <th class="col bg-success">Saturday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td class="text-primary">8</td>
+                        <td class="text-danger">9</td>
+                        <td class="text-danger">10</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h1>March</h1>
+        <div class="row">
+            <table class="table table-secondary table table-bordered">
+                <thead class="secondary">
+                    <tr>
+                        <th class="col col bg-success" style="color: red ">Sunday</th>
+                        <th class="col bg-success">Monday</th>
+                        <th class="col bg-success">Tuesday</th>
+                        <th class="col bg-success">Wednesday</th>
+                        <th class="col bg-success">Thursday</th>
+                        <th class="col bg-success">Friday</th>
+                        <th class="col bg-success">Saturday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>1</td>
+                        <td>2</td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                    </tr>
+                    <tr>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td class="text-danger">28</td>
+                        <td class="text-danger">29</td>
+                        <td class="text-danger">30</td>
+                    </tr>
+                    <tr>
+                        <td>31</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h1>April</h1>
+        <div class="row">
+            <table class="table table-secondary table table-bordered">
+                <thead class="secondary">
+                    <tr>
+                        <th class="col col bg-success" style="color: red ">Sunday</th>
+                        <th class="col bg-success">Monday</th>
+                        <th class="col bg-success">Tuesday</th>
+                        <th class="col bg-success">Wednesday</th>
+                        <th class="col bg-success">Thursday</th>
+                        <th class="col bg-success">Friday</th>
+                        <th class="col bg-success">Saturday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td>7</td>
+                        <td>8</td>
+                        <td class="text-danger">9</td>
+                        <td class="text-danger">10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                    </tr>
+                    <tr>
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h1>May</h1>
+        <div class="row">
+            <table class="table table-secondary table table-bordered">
+                <thead class="column">
+                    <tr>
+                        <th class="col col bg-success" style="color: red ">Sunday</th>
+                        <th class="col bg-success">Monday</th>
+                        <th class="col bg-success">Tuesday</th>
+                        <th class="col bg-success">Wednesday</th>
+                        <th class="col bg-success">Thursday</th>
+                        <th class="col bg-success">Friday</th>
+                        <th class="col bg-success">Saturday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="text-danger">1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>31</td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+            </table>
+    </div>
+    <h1>June</h1>
+    <div class="row">
+        <table class="table table-secondary table table-bordered">
+            <thead class="column">
+                <tr>
+                    <th class="col col bg-success" style="color: red ">Sunday</th>
+                    <th class="col bg-success">Monday</th>
+                    <th class="col bg-success">Tuesday</th>
+                    <th class="col bg-success">Wednesday</th>
+                    <th class="col bg-success">Thursday</th>
+                    <th class="col bg-success">Friday</th>
+                    <th class="col bg-success">Saturday</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>1</td>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td class="text-danger">12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td class="text-danger">17</td>
+                    <td class="text-primary">18</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>23</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+                </tr>
+                <tr>
+                    <td>30</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+        </table>
+    </div>
+    <h1>July</h1>
+    <div class="row">
+        <table class="table table-secondary table table-bordered">
+            <thead class="column">
+                <tr>
+                    <th class="col col bg-success" style="color: red ">Sunday</th>
+                    <th class="col bg-success">Monday</th>
+                    <th class="col bg-success">Tuesday</th>
+                    <th class="col bg-success">Wednesday</th>
+                    <th class="col bg-success">Thursday</th>
+                    <th class="col bg-success">Friday</th>
+                    <th class="col bg-success">Saturday</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <td>7</td>
+                    <td class="text-primary">8</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>23</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                </tr>
+                <tr>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tbody>
+        </table>
+    </div>
+    <h1>August</h1>
+        <div class="row">
+            <table class="table table-secondary table table-bordered">
+                <thead class="column">
+                    <tr>
+                        <th class="col col bg-success" style="color: red ">Sunday</th>
+                        <th class="col bg-success">Monday</th>
+                        <th class="col bg-success">Tuesday</th>
+                        <th class="col bg-success">Wednesday</th>
+                        <th class="col bg-success">Thursday</th>
+                        <th class="col bg-success">Friday</th>
+                        <th class="col bg-success">Saturday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td class="text-danger">21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                        <td>25</td>
+                        <td class="text-danger">26</td>
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>31</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    <h1>September</h1>
+        <div class="row">
+            <table class="table table-secondary table table-bordered">
+                <thead class="column">
+                    <tr>
+                        <th class="col col bg-success" style="color: red ">Sunday</th>
+                        <th class="col bg-success">Monday</th>
+                        <th class="col bg-success">Tuesday</th>
+                        <th class="col bg-success">Wednesday</th>
+                        <th class="col bg-success">Thursday</th>
+                        <th class="col bg-success">Friday</th>
+                        <th class="col bg-success">Saturday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td class="text-primary">16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                    </tr>
+                    <tr>
+                        <td>29</td>
+                        <td>30</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    <h1>October</h1>
+        <div class="row">
+            <table class="table table-secondary table table-bordered">
+                <thead class="column">
+                    <tr>
+                        <th class="col col bg-success" style="color: red ">Sunday</th>
+                        <th class="col bg-success">Monday</th>
+                        <th class="col bg-success">Tuesday</th>
+                        <th class="col bg-success">Wednesday</th>
+                        <th class="col bg-success">Thursday</th>
+                        <th class="col bg-success">Friday</th>
+                        <th class="col bg-success">Saturday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                    </tr>
+                    <tr>
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>31</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    <h1>November</h1>
+        <div class="row">
+            <table class="table table-secondary table table-bordered">
+                <thead class="column">
+                    <tr>
+                        <th class="col col bg-success" style="color: red ">Sunday</th>
+                        <th class="col bg-success">Monday</th>
+                        <th class="col bg-success">Tuesday</th>
+                        <th class="col bg-success">Wednesday</th>
+                        <th class="col bg-success">Thursday</th>
+                        <th class="col bg-success">Friday</th>
+                        <th class="col bg-success">Saturday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="text-danger">1</td>
+                        <td class="text-danger">2</td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                    </tr>
+                    <tr>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                        <td class="text-danger">30</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h1>December</h1>
+        <div class="row">
+            <table class="table table-secondary table table-bordered">
+                <thead class="column">
+                    <tr>
+                        <th class="col col bg-success" style="color: red ">Sunday</th>
+                        <th class="col bg-success">Monday</th>
+                        <th class="col bg-success">Tuesday</th>
+                        <th class="col bg-success">Wednesday</th>
+                        <th class="col bg-success">Thursday</th>
+                        <th class="col bg-success">Friday</th>
+                        <th class="col bg-success">Saturday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td class="text-danger">8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td>23</td>
+                        <td class="text-danger">24</td>
+                        <td class="text-danger">25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                    </tr>
+                    <tr>
+                        <td>29</td>
+                        <td class="text-danger">30</td>
+                        <td class="text-danger">31</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!--Holiday List-->
+    <div class="Info-fluid table-border table-striped">
+        <div class="working">
+            <div class="set1-title">A. Regular Holidays</div>
+            <table class="table table-secondary table-borderd border border-dark">
+                <thead class="thead-dark">
+                    <tr>
+                        <th class="col-lg" style="color: rgb(12, 181, 0)">Holidays and Observance</th>
+                        <th class="col-lg" style="color: rgb(12, 181, 0)">Date</th>
+    
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-info" style="text-align:left;">New Year's Holiday</td>
+                        <td class="text-danger" style="text-align:left;"> January 1 (Mon)</td>
+                    </tr>
+                    <tr>
+                        <td class="text-info" style="text-align:left;">Maunday Thursday</td>
+                        <td class="text-danger" style="text-align:left;"> March 28 (Thu)</td>
+                    </tr>
+                    <tr>
+                        <td class="text-info" style="text-align:left;">Good Friday</td>
+                        <td class="text-danger" style="text-align:left;"> March 29 (Fri)</td>
+                    </tr>
+                    <tr>
+                        <td class="text-info" style="text-align:left;">Araw ng Kagitingan</td>
+                        <td class="text-danger" style="text-align:left;">April 9 (Tue)</td>
+                    </tr>
+                    <tr>
+                        <td class="text-info" style="text-align:left;">Labor Day</td>
+                        <td class="text-danger" style="text-align:left;">May 1 (Wed)</td>
+                    </tr>
+                    <tr>
+                        <td class="text-info" style="text-align:left;">Independence Day</td>
+                        <td class="text-danger" style="text-align:left;">June 12 (Wed)</td>
+                    </tr>
+                    <tr>
+                        <td class="text-info" style="text-align:left;">National Heroes Day</td>
+                        <td class="text-danger" style="text-align:left;">August 26 (Mon)</td>
+                    </tr>
+                    <tr>
+                        <td class="text-info" style="text-align:left;">Bonifacio Day</td>
+                        <td class="text-danger" style="text-align:left;">November 30 (Sat)</td>
+                    </tr>
+                    <tr>
+                        <td class="text-info" style="text-align:left;">Christmas Day</td>
+                        <td class="text-danger" style="text-align:left;">December 25 (Wed)</td>
+                    </tr>
+                    <tr>
+                        <td class="text-info" style="text-align:left;">Rizal Day</td>
+                        <td class="text-danger" style="text-align:left;">December 30 (Mon)</td>
+                    </tr>
+            </table>
+                
+           
+        </div>
+        <div class="n-working">
+            <div class="set2-title">B. Special (Non-Working) Holidays</div>
+            <table class="table table-secondary table-borderd border border-dark">
+                <thead class="thead-dark">
+                    <tr>
+                        <th class="col-lg" style="color: rgb(12, 181, 0)">Holidays and Observance</th>
+                        <th class="col-lg" style="color: rgb(12, 181, 0)"   >Date</th>
+        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-info" style="text-align:left;">Ninoy Aquino Day</td>
+                        <td class="text-danger" style="text-align:left;"> August 21 (Wed)</td>
+                    </tr>
+                    <tr>
+                        <td class="text-info" style="text-align:left;">Feast of the Immaculate Conception of Mary</td>
+                        <td class="text-danger" style="text-align:left;"> December 8 (Sun)</td>
+                    </tr>
+                    <tr>
+                        <td class="text-info" style="text-align:left;">Last Day of the Year</td>
+                        <td class="text-danger" style="text-align:left;">December 31 (Tue)</td>
+                    </tr>
+                    <tr>
+                        <td class="text-info" style="text-align:left;">Araw ng Kagitingan</td>
+                        <td class="text-danger" style="text-align:left;">April 9 (Tue)</td>
+                    </tr>
+                    <tr>
+                        <td class="text-info" style="text-align:left;">Additional Special (Non-Working) Day</td>
+                        <td class="text-danger" style="text-align:left;">February 9 (Fri)</td>
+                    </tr>
+                    <tr>
+                        <td class="text-info" style="text-align:left;">Chinese New Year - Additional Special (Non-Working) Day</td>
+                        <td class="text-danger" style="text-align:left;">February 10 (Sat)</td>
+                    </tr>
+                    <tr>
+                        <td class="text-info" style="text-align:left;">Black Saturday - Additional Special (Non-Working) Day</td>
+                        <td class="text-danger" style="text-align:left;">March 30 (Sat)</td>
+                    </tr>
+                    <tr>
+                        <td class="text-info" style="text-align:left;">All Souls' Day - Additional Special (Non-Working) Day</td>
+                        <td class="text-danger" style="text-align:left;">November 2 (Sat)</td>
+                    </tr>
+                    <tr>
+                        <td class="text-info" style="text-align:left;">Christmas Eve - Additional Special (Non-Working) Day</td>
+                        <td class="text-danger" style="text-align:left;">December 24 (Tue)</td>
+                    </tr>
+            </table>
+        </div>
+</body>
+</html>
